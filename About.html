@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tabs with Icons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .about{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.about h1{
+	color:#F97300;
+	margin: 2em;
+}
+.about img{
+	height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:4px solid #10828C;
+}
+.about .desc h3{
+	color: #10828C;
+}
+.about .desc p{
+	line-height:2;
+	color:#888;
+}
+
+</style>
+</head>
+<body>
+    <div class="m-4">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Brand</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#home" class="nav-item nav-link">
+                            <i class="bi-house-door"></i> Home
+                        </a>
+                        <a href="#about" class="nav-item nav-link">
+                            <i class="bi-person"></i> About
+                        </a>
+                        <a href="#" class="nav-item nav-link">
+                            <i class="bi bi-briefcase"></i> Portfolio
+                        </a>
+                        <a href="#" class="nav-item nav-link">
+                            <i class="bi bi-journal-text"></i> Blog
+                        </a>
+                        <a href="#" class="nav-item nav-link">
+                            <i class="bi bi-people"></i> Team
+                        </a>
+                        <a href="#navbarToggleExternalContent" class="nav-item nav-link" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>    
+
+    <div class="about" id="about">
+        <div class="container">
+          <h1 class="text-center">About Me</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="image/Gunawan.JPG" class="img-fluid">
+                    <span class="text-justify">S.Web Developer</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                  
+                    <h3>Matthew APrilio</h3>
+                    <p>
+                       ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
